@@ -53,6 +53,7 @@ h6 {
     /* Primary */
     --Darkcyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
+    --DarkcyanHover: hsl(158, 36%, 20%);
 
     /* Neutral */
     --Very_dark_blue: hsl(212, 21%, 14%);
@@ -135,6 +136,10 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+button:hover{
+    background-color: var(--DarkcyanHover);
 }
 
 svg{
