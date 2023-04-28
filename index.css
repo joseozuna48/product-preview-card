@@ -115,6 +115,10 @@ img{
 
 }
 
+#Description{
+    line-height: 2em;
+}
+
 #sale{
     color: var(--Darkcyan);
     font-family: var(--main_font);
