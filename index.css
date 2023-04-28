@@ -43,11 +43,11 @@ h6 {
     overflow-wrap: break-word;
 }
 /******************************** end of css reset ******************************************/
-* {
+/* * {
     outline: 1px solid #f00 !important;
     opacity: 1 !important;
     visibility: visible !important;
-  }
+  } */
 /********************************* css variables *******************************************/
 :root{
     /* Primary */
