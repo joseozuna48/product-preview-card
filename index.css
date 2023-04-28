@@ -75,13 +75,17 @@ p{
 
 body{
     background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 main{
     display: grid;
     max-width: 30rem;
-    margin: auto;
-    /* border-radius: 10%; */
+    margin:1em;   
+    min-width: 20em;
 }
 
 
