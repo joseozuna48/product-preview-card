@@ -43,7 +43,11 @@ h6 {
     overflow-wrap: break-word;
 }
 /******************************** end of css reset ******************************************/
-
+* {
+    outline: 1px solid #f00 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
 /********************************* css variables *******************************************/
 :root{
     /* Primary */
@@ -76,13 +80,10 @@ body{
 main{
     display: grid;
     max-width: 30rem;
-    margin:1em;
+    margin: auto;
     /* border-radius: 10%; */
 }
 
-#image-section{
-    max-width: 30em;
-}
 
 img{
     border-radius:  var(--border-radius) var(--border-radius) 0 0 ;
@@ -93,7 +94,7 @@ img{
     display: grid;
     align-content: start;
     row-gap: 0.5em;
-    padding:1em;
+    padding:0.5em;
     background-color: var(--White);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
@@ -127,12 +128,9 @@ svg{
     margin-right: 0.5em;
 }
 
-
-
-
-
 .attribution a {
     color: hsl(228, 45%, 44%);
+    width: 100%;
 }
 
 @media (min-width:600px) {
@@ -160,6 +158,7 @@ svg{
         font-size: 11px;
         position: absolute;
         bottom:0;
-        right: 0;
+        right:0;
+        
     }
 }
