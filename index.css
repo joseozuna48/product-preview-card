@@ -1,0 +1,165 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+/******************************** end of css reset ******************************************/
+
+/********************************* css variables *******************************************/
+:root{
+    /* Primary */
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --border-radius:5%;
+
+    /* fonts */
+    --main_font: 'Fraunces', serif;
+    --secondary_font: 'Montserrat', serif;
+    
+
+}
+p{
+    font-family: var(--secondary_font);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+body{
+    background-color: var(--Cream);
+}
+
+main{
+    display: grid;
+    max-width: 30rem;
+    margin:1em;
+    /* border-radius: 10%; */
+}
+
+#image-section{
+    max-width: 30em;
+}
+
+img{
+    border-radius:  var(--border-radius) var(--border-radius) 0 0 ;
+    
+}
+
+#content-section{
+    display: grid;
+    align-content: start;
+    row-gap: 0.5em;
+    padding:1em;
+    background-color: var(--White);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+#Title{
+    font-family: var(--main_font);
+    font-weight: 700;
+
+}
+
+#sale{
+    color: var(--Darkcyan);
+    font-family: var(--main_font);
+}
+
+
+
+button{
+    background-color: var(--Darkcyan);
+    border-radius: 0.5em;
+    color:var(--White);
+    border: none;
+    padding:1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg{
+    margin-right: 0.5em;
+}
+
+
+
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:600px) {
+
+    body{
+        display: grid;
+        place-content: center;
+    }
+
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img{
+        content: url("./images/image-product-desktop.jpg");
+        border-radius:  var(--border-radius) 0 0 var(--border-radius);
+    }
+    
+    #content-section{
+        border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    }
+
+
+    .attribution {
+        font-size: 11px;
+        position: absolute;
+        bottom:0;
+        right: 0;
+    }
+}
